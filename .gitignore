@@ -1,0 +1,14 @@
+.DS_Store
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.swp
+*.swo
+benchmarks/graphs
+node_modules/
+testing
+test.js
+.idea
