@@ -4,11 +4,14 @@ var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+// using less
+var less = require('less-middleware');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -19,6 +22,11 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
+// using less
+app.use(less('/less', {
+  dest: '/css',
+  pathRoot: path.join(__dirname, 'public')
+}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
