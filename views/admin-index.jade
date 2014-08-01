@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}
+	form.login-form
+		p.admin-email Email
+			input#admin-email(type="text", placeholder="Email")
+		p.admin-pass Password
+			input#admin-pass(type="password", placeholder="Password")
+		input.login-submit(type="submit", value="Send")
+	a.new-account(href="/admin/register") Create new account

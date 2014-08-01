@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"name": "home",
+		"title": "Inicio",
+		"location": "/"
+	},
+	{
+		"id": 2,
+		"name": "products",
+		"title": "Productos",
+		"location": "/productos"
+	},
+	{
+		"id": 3,
+		"name": "gallery",
+		"title": "Galeria",
+		"location": "/galeria"
+	},
+	{
+		"id": 4,
+		"name": "contact",
+		"title": "Contacto",
+		"location": "/contacto"
+	}
+]

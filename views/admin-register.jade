@@ -1,0 +1,16 @@
+extends layout
+
+block content
+	h1= title
+	form.register-form(method="post", action="register")
+		p.register-firstname Firstname
+			input#register-firstname(type="text", placeholder="Firstname", name="firstname")
+		p.register-lastname Lastname
+			input#register-firstname(type="text", placeholder="Lastname", name="lastname")
+		p.register-email Email
+			input#admin-email(type="text", placeholder="Email", name="email")
+		p.register-pass Password
+			input#register-pass(type="password", placeholder="Password" name="password")
+		p.register-pass-again Re-type password
+			input#register-pass(type="password", placeholder="Password")
+		input.login-submit(type="submit", value="Send")
