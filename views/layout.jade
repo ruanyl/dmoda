@@ -6,16 +6,20 @@ html
 		link(rel='stylesheet', type='text/css', href='/css/style.css')
 		block head
 	body
-		header#header
-			#logo
-				a(href="/")
-					img(src="/images/dmoda_top_logo.png")
-			nav#mainNavigation
-				div.nav-container
-					each page in pages
-						a(href=page.location)= page.title
-			#burgerIcon
-			block header
-		
-		block content
-		block footer
+		#page
+			header#header
+				#logo
+					a(href="/")
+						img(src="/images/dmoda_top_logo.png")
+				nav#mainNavigation
+					div.nav-container
+						each page in pages
+							a(href=page.location)= page.title
+				#burgerIcon
+				block header
+			
+			block content
+			footer#footer
+				span.
+					Copyright &copy; 2014 D'Moda
+				block footer

@@ -3,24 +3,36 @@
 		"id": 1,
 		"name": "home",
 		"title": "Inicio",
-		"location": "/"
+		"location": "/",
+		"primary_content": [
+			"D’moda nació con la idea de servir de la mejor manera en el campo de la confección a medida para la mujer que quiere vestir bien. Atendida por su propietaria Mayra Arriaga, quien ha mantenido una relación amistosa con sus clientes que la buscan desde hace muchos años por su gran experiencia en la confección de todo tipo de prenda para dama.",
+			"Durante 20 años Mayra se ha dedicado a la confeccion en forma independiente , tiempo en el cual ha tenido la oportunidad de confeccionar diversidad de prendas desde vestidos de novia hasta manteleria para eventos.",
+			"D’moda ofrece un buen servicio de confeccion a un precio competitivo,entregando las prendas con calidad y puntualidad."
+		],
+		"secondary_content": ""
 	},
 	{
 		"id": 2,
 		"name": "products",
 		"title": "Productos",
-		"location": "/productos"
+		"location": "/productos",
+		"primary_content": "",
+		"secondary_content": ""
 	},
 	{
 		"id": 3,
 		"name": "gallery",
 		"title": "Galeria",
-		"location": "/galeria"
+		"location": "/galeria",
+		"primary_content": "",
+		"secondary_content": ""
 	},
 	{
 		"id": 4,
 		"name": "contact",
 		"title": "Contacto",
-		"location": "/contacto"
+		"location": "/contacto",
+		"primary_content": "",
+		"secondary_content": ""
 	}
 ]
