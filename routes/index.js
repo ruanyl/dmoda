@@ -6,7 +6,7 @@ var pages = JSON.parse(fs.readFileSync("./data/pages.json", "utf8"));
 /* GET home page. */
 router.get('/', function(req, res) {
 	console.log(pages[0])
-	res.render("index", {pages: pages, primary_content: pages[0].primary_content});
+	res.render("index", {pages: pages, primary_content: pages[0].primary_content, pageid: pages[0].id});
 });
 
 /* GET products page. */

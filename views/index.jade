@@ -1,7 +1,7 @@
 extends layout
 
 block content
-	div#index.content
+	div(data-pageid=pageid)
 		h1.main-title Bienvenidos!
 		each content in primary_content
 			p.body-paragraph= content

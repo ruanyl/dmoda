@@ -11,6 +11,12 @@
 
 @brandPurple: #583381;
 @headerH: 60px;
+@full: 100%;
+@fourth: @full/4;
+@layout_width: 960px;
+
+
+// Mixins *******
 .floatme(@s, @w){
 	float: @s;
 	width: @w;
@@ -18,10 +24,14 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box; 
 }
-@full: 100%;
-@fourth: @full/4;
-@layout_width: 960px;
+.rotateme(@deg){
+	-moz-transform:rotate(@deg);  
+	-webkit-transform:rotate(@deg);  
+	-o-transform:rotate(@deg);  
+	-ms-transform:rotate(@deg);
+}
 
+//***************
 
 html, body {
 	width: 100%;
@@ -33,34 +43,32 @@ body {
 	margin: 0;
 	font-family: @bodyFont;
 	font-size: 16px;
-	background-color: @brandPurple;
-}
-
-#page {
-	max-width: @layout_width;
-	margin: 0 auto;
-	background-color: white;
-	height: 100%;
-	position: relative;
-
-	a {
-		color: @brandPurple;
-	}
 }
 
 #header {
-	border-bottom: 1px solid @brandPurple;
+	background-color: @brandPurple;
 	height: @headerH;
+	border-bottom: 2px dashed white;
 }
 
 //navigation
 #logo {
+	max-width: 230px;
+	min-width: 200px;
 	.floatme(left, 20%);
+	.rotateme(-8deg);
 	height: @headerH;
 	padding: 10px;
+	background-color: beige;
+	margin: 25px 0 0 10px;
+	border: 1px dashed @brandPurple;
+
 	a, img {
 		display: block;
-		height: 100%;		
+		width: 95%;
+		margin: 0 auto;
+		position: relative;
+		bottom: 4px;	
 	}
 	img {
 		display: block;
@@ -85,6 +93,8 @@ body {
 .nav-container {
 	overflow: hidden;
 	.floatme(right, 80%);
+	max-width: 700px;
+	min-width: 400px;
 }
 .nav-container a {
 	display: block;
@@ -92,18 +102,31 @@ body {
 	line-height: @headerH;
 	.floatme(left, @fourth);
 	text-decoration: none;
-	color: @brandPurple;
+	color: white;
 	text-align: center;
 	font-weight: bold;
 }
 
 //content
-.content {
+
+#content {
+	max-width: @layout_width;
+	margin: 0 auto;
+
+}
+
+.outter-box {
 	margin: 5em;
+	background-color: white;
+	position: relative;
 	border: 0.16em dashed white;
 	padding: 5em;
 	background: @brandPurple;
 	color: white;
+}
+
+#content a {
+	color: @brandPurple;
 }
 
 .main-title {
@@ -122,9 +145,6 @@ body {
 	color: rgba(255, 255, 255, 0.8);
 }
 #footer {
-	position: absolute;
-	width: 100%;
-	bottom: 0;
 	span {
 		display: block;
 		border: 0.15em dashed @brandPurple;
