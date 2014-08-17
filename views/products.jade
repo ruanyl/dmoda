@@ -1,5 +1,8 @@
 extends layout
 
+block head
+		script(type="text/javascript", src="/scripts/jquery.collapsible.min.js")
+
 block content
 	div(data-pageid=page.id)
 		#primaryContent.outter-box
@@ -10,9 +13,12 @@ block content
 		#secondaryContent.outter-box
 			#productCategories
 				h2 Productos y Categorias
-				ul.body-list
+				.js-collapsible.collapsible-container 
 					each category in product_cateogries
-						li= category.name
+						div.category-name
+							span.arrow
+							span= category.name
+						.product-list.disno
 							ul.body-list
 								each product in category.products
 									li= product
@@ -29,3 +35,5 @@ block content
 						figcaption= content.caption
 				else
 					p.body-paragraph= content
+block body
+	script(type="text/javascript", src="/scripts/products.js")
