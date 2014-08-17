@@ -1,0 +1,14 @@
+doctype html
+html
+	head
+		title D'moda Guatemala, expreciencia en confeccion.
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		link(rel='stylesheet', type='text/css', href='/css/style.css')
+	body
+		.error-container
+			h1= message
+			if error
+				h2= error.status
+				.side-scrolling
+					h3 Stacktrace
+					pre #{error.stack}
