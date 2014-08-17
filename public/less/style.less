@@ -117,12 +117,25 @@ body {
 
 .outter-box {
 	margin: 5em;
-	background-color: white;
 	position: relative;
+	padding: 2em 5em;
+	background-color: white;
+}
+
+#primaryContent {
 	border: 0.16em dashed white;
-	padding: 5em;
 	background: @brandPurple;
 	color: white;
+}
+
+#secondaryContent {
+	border: none;
+	background: white;
+	color: black;
+}
+#secondaryContent.outter-box {
+	margin: 3em;
+	padding: 1em;
 }
 
 #content a {
@@ -139,11 +152,38 @@ body {
 	text-shadow: 2px 2px 0px black;
 }
 
-.body-paragraph {
+.body-paragraph,
+.body-list,
+.body-figure {
 	line-height: 1.5em;
 	padding-bottom: 1.5em;
-	color: rgba(255, 255, 255, 0.8);
+	color: inherit;
+	opacity: 0.8;
 }
+
+.body-list {
+	opacity: 0.8;
+	margin: 0 0 10px 0;
+	position: relative;
+	top: -1em;
+	text-transform: capitalize;
+}
+
+#productCategories .body-list {
+	opacity: 0.8;
+	margin: 0 0 10px 0;
+	position: relative;
+	top: auto;
+	text-transform: capitalize;
+}
+
+.body-figure figcaption {
+	font-size: 0.9em;
+	color: inherit;
+	opacity: inherit;
+	font-style: italic;
+}
+
 #footer {
 	span {
 		display: block;

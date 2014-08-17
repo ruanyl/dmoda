@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var less = require('less-middleware');
 
 var routes = require('./routes/index');
-var admin = require('./routes/admin');
+//var admin = require('./routes/admin');
 //var mongo = require('mongo');
 
 
@@ -31,7 +31,7 @@ app.use(less('/less', {
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/admin', admin);
+//app.use('/admin', admin);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {

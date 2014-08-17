@@ -2,7 +2,7 @@
 	{
 		"id": 1,
 		"name": "home",
-		"title": "Inicio",
+		"title": "inicio",
 		"location": "/",
 		"primary_content": [
 			"D’moda nació con la idea de servir de la mejor manera en el campo de la confección a medida para la mujer que quiere vestir bien. Atendida por su propietaria Mayra Arriaga, quien ha mantenido una relación amistosa con sus clientes que la buscan desde hace muchos años por su gran experiencia en la confección de todo tipo de prenda para dama.",
@@ -16,8 +16,26 @@
 		"name": "products",
 		"title": "Productos",
 		"location": "/productos",
-		"primary_content": "",
-		"secondary_content": ""
+		"primary_content": [
+			"Confeccionamos las prendas según tu gusto y presupuesto brindándote asesoría para la elección de telas y diseño según tu tipo de cuerpo y características personales ; pues lo mejor de lucir un vestido hecho a medida es que se ajustara muy bien a tu figura realzando las partes más atractivas de tu cuerpo y dándote una hermosa forma, haciéndote sentir más bella y segura."
+		],
+		"secondary_content": {
+			"title": "TIPS PARA ELEGIR UN VESTIDO",
+			"body": [
+				"Elegir un vestido a veces nos resulta algo complicado sobre todo ahora que las tendencias de la moda son muy diversas y tenemos muchisimas opciones por ello debemos tomar en cuenta detalles como:",
+				[
+					"Estatura",
+					"Color de Piel",
+					"Tipo de Cuerpo"
+				],
+				"Para elegir un vestido de acuerdo a nuestra anatomía y atraer las miradas  debemos saber que tipo de cuerpo tenemos. Por ejemplo para el cuerpo tipo ovalo ó manzana puedes destacar tus brazos y piernas y elegir prendas no tan entalladas en el torso evitando los estampados grandes.",
+				"Aquí tienes algunas formas para identificarte:",
+				{
+					"source": "/images/forma-cuerpo-mujer.jpg",
+					"caption": "Formas de cuerpo de mujer."
+				}
+			]
+		}
 	},
 	{
 		"id": 3,

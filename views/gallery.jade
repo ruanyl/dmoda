@@ -1,5 +1,8 @@
 extends layout
 
 block content
-	div#index.content
-		p Bienvenido a la Galeria de fotos
+	div(data-pageid=page.id)
+		#primaryContent.outter-box
+			h1.main-title= page.title
+			each content in page.primary_content
+				p.body-paragraph= content

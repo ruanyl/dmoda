@@ -1,5 +1,31 @@
 extends layout
 
 block content
-	div#index.content
-		p Bienvenido a la pagina de Productos
+	div(data-pageid=page.id)
+		#primaryContent.outter-box
+			h1.main-title= page.title
+			each content in page.primary_content
+				p.body-paragraph= content
+
+		#secondaryContent.outter-box
+			#productCategories
+				h2 Productos y Categorias
+				ul.body-list
+					each category in product_cateogries
+						li= category.name
+							ul.body-list
+								each product in category.products
+									li= product
+
+			h2= page.secondary_content.title
+			each content in page.secondary_content.body
+				if content instanceof Array
+					ul.body-list
+						each item in content
+							li= item
+				else if content instanceof Object
+					figure.body-figure
+						img(src=content.source, alt=content.caption)
+						figcaption= content.caption
+				else
+					p.body-paragraph= content

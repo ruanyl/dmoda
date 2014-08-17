@@ -1,0 +1,36 @@
+[
+	{
+		"name": "vestidos",
+		"products": [
+			"fiesta",
+			"15 años",
+			"novias",
+			"baile"
+		]
+	},
+	{
+		"name": "trajes",
+		"products": [
+			"trajes de etiqueta"
+		]
+	},
+	{
+		"name": "uniformes",
+		"products": [
+			"oficina",
+			"para chef"
+		]
+	},
+	{
+		"name": "disfraces",
+		"products": [
+			"infantiles"
+		]
+	},
+	{
+		"name": "manteleria",
+		"products": [
+			"para eventos"
+		]
+	}
+]
