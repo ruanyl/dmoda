@@ -5,4 +5,21 @@ block content
 		#primaryContent.outter-box
 			h1.main-title= page.title
 			each content in page.primary_content
-				p.body-paragraph= content
+				if content instanceof Array
+					ul.body-list
+						each item in content
+							li= item
+				else
+					p.body-paragraph= content
+
+		#secondaryContent.outter-box
+			p.body-paragraph= page.secondary_content.message
+			h2 Ubicacion
+			p.body-paragraph= page.secondary_content.address
+			h4 Telefonos:
+				p.body-paragraph
+					each phone, i in page.secondary_content.phones
+						if i === 0
+							span (+502) #{phone} y 
+						else 
+							span (+502) #{phone}

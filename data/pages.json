@@ -42,7 +42,7 @@
 		"name": "gallery",
 		"title": "Galeria",
 		"location": "/galeria",
-		"primary_content": "",
+		"primary_content": "Esta pagina esta en desarrollo. Proximamente visita nuesta galeria de fotos.",
 		"secondary_content": ""
 	},
 	{
@@ -50,7 +50,14 @@
 		"name": "contact",
 		"title": "Contacto",
 		"location": "/contacto",
-		"primary_content": "",
-		"secondary_content": ""
+		"primary_content": [
+			"Es muy sencillo:",
+			["Envías tu solicitud o diseño", "Cotizamos", "Te medimos", "Te tallas", "Recoges tu prenda"]
+		],
+		"secondary_content": {
+			"message": "Atendemos con previa cita. En casos especiales o empresas atendemos a domicilio.",
+			"address": "Km 13.5 Calzada Roosevelt, a 50m de la Fraternidad Cristiana.",
+			"phones": ["4392 1433", "4392 1433"] 
+		}
 	}
 ]

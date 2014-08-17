@@ -4,5 +4,6 @@ block content
 	div(data-pageid=page.id)
 		#primaryContent.outter-box
 			h1.main-title= page.title
-			each content in page.primary_content
-				p.body-paragraph= content
+			//- each content in page.primary_content
+			//-	p.body-paragraph= content
+			p.body-paragraph= page.primary_content
