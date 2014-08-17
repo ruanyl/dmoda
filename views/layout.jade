@@ -2,7 +2,7 @@ doctype html
 html
 	head
 		title D'moda Guatemala, expreciencia en confeccion.
-		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
 		link(rel='stylesheet', type='text/css', href='/css/style.css')
 		script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
 		block head
@@ -11,12 +11,17 @@ html
 				#logo
 					a(href="/")
 						img(src="/images/dmoda_top_logo.png")
-				nav#mainNavigation
+				nav#mainNavigation.not-on-mobile
 					div.nav-container
 						each page in pages
 							a(href=page.location)= page.title
-				#burgerIcon
+				#burgerIcon.on-mobile
 				block header
+
+		nav#mobileMenu.on-mobile
+			div.mobile-nav-container
+				each page in pages
+					a(href=page.location)= page.title
 
 		#content
 			block content
@@ -25,3 +30,4 @@ html
 			span Copyright &copy; 2014 D'Moda
 			block footer
 	block body
+	script(type="text/javascript" src="/scripts/menu.js")
