@@ -6,7 +6,6 @@ var products = JSON.parse(fs.readFileSync("./data/products.json", "utf8"));
 
 router.use(function(req, res, next){
 	//console.log("Router using " + req.method, "for path " + req.url);
-	res.send(301);
 	next();
 });
 
